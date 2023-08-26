@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.cart{
+    font-size: 27px;
+}
