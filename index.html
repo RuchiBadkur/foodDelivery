@@ -19,82 +19,86 @@
 <body>
     <!-- navbar -->
     <!-- It sticks to the top as you scroll.  -->
-    <nav id="navbar" class="d-flex justify-content-between mx-5 px-5 pt-3 align-items-center border-bottom">
-        <div class="logo ms-5">
-            <span class="bg-danger px-1 text-light rounded fw-bold">D</span>
-            <span class="text-danger fw-bold">Fdelivery</span> 
+    <nav id="navbar" class="">
+        <div class="main d-flex justify-content-between align-items-center ">
+
+        <div class="logo ">
+            <span class="bg-danger px-1 text-light rounded fs-3 fw-bold">D</span>
+            <span class="text-danger fs-3 fw-bold">Fdelivery</span> 
         </div>
         <div class="navlinks">
-            <ul class=" d-flex list-unstyled">
-                <li>Home</li>
-                <li>About</li>
-                <li>Shop</li>
-                <li>Food</li>
-                <li>Recipes</li>
-                <li>Contact</li>
+            <ul class=" d-flex list-unstyled fs-5 fw-light">
+                <a href="#"><li>Home</li></a>
+                <a href="#aboutus"><li>About</li></a>
+                <a href="#mobileapp"><li>Shop</li></a>
+                <a href="#"><li>Food</li></a>
+                <a href="#recipes"><li>Recipes</li></a>
+                <a href="#footer"><li>Contact</li></a>
             </ul>
         </div>
         <div class="userhelp d-flex justify-content-between h-50 align-items-center ">
-            <div class="border border-secondary w-50 d-flex rounded">
-                <input class="border border-white text-start w-75 ms-2" type="text" placeholder="Search your item">
+            <div class="shadow border border-0 w-50 d-flex p-1 rounded searchbar">
+                <input class=" border border-0 text-start w-100 ms-2" type="text" placeholder="Search your item">
                 <!-- search icon -->
                 <i class="fa-solid fa-magnifying-glass  m-2 p-0"></i>
             </div>
             <!-- cart icon -->
-            <i class="fa-solid fa-bag-shopping cart"></i>
-            <button class="btn btn-danger fw-bold text-white">Sign in</button>
+            <i class="fa-solid fa-bag-shopping cart fs-3"></i>
+            <div class="items fs-6 fw-bold text-center">4</div>
+            <button class="btn btn-danger text-white px-4 rounded-2">Sign in</button>
+        </div>
         </div>
     </nav>
 
     <!-- header -->
     <!-- The main message? 'Get your cuisine delivered right to your door'.  -->
     <!-- a menu to help users get around the site easily. -->
-    <section id="header">
-        <div>
-            <span>More than Faster</span>
-            <!-- fries icon -->
+    <section id="hero" class="d-flex">
+        <div class="hero-div1">
+            <span class="text-danger fs-5 py-3 px-2 text-center rounded-pill">More than Faster 
+                <img src="./images/fries.png" alt="">
+            </span>
 
             <h2>
                 Get your cuisine <br>
                 delivered right to <br>
-                <span>your door</span>
+                <span style="color: #F94A3D;">your door</span>
             </h2>
             <p>Food that is delivered at the right time. The trendy food delivery partner. Good food is what we deliver. Your hunger companion. </p>
 
-            <button>Explore Food</button>
+            <button class="fs-5 border-0 p-2 fw-lighter">Explore Food</button>
         </div>
 
-        <div>
-            <img src="" alt="food delivery guy on a scooter">
-        </div>
+        <img src="./images/deliveryguy.png" alt="food delivery guy on a scooter">
+
     </section>
 
     <!-- About Us -->
     <!--This section tells you all about AccioJob's food delivery service. It mentions how proud we are to be a top choice in our town. There's also a bit about delivering your favorite food right to your doorstep. -->
-    <section id="aboutus">
+    <section id="aboutus" class="d-flex justify-content-evenly ">
         <div class="part1">
-            <h3>Why we are <br>
-                Best in our<br>
+            <h3>Why we are 
+                Best in our
                 Town
             </h3>
             <p>whole grains and low-fat dairy can help to reduce your risk of heart disease by maintaining blood pressure and </p>
         </div>
-        <div class="part2">
-            <img src="" alt="">
+        <div class="part2 cardd">
+            <img class="imgg" src="./images/favfood.png" alt="favfood">
             <h5>Choose <br>
                 your favorite <br>
                 food 
             </h5> 
         </div>
-        <div class="part3">
-            <img src="" alt="">
+        <div class="part3 cardd">
+            <img class="imgg" src="./images/favfood.png" alt="">
             <h5>Get delivery <br>
                 at your door <br>
                 step 
             </h5> 
         </div>
-        <div class="part4">
-            <img src="" alt="">
+        <div class="part4 cardd">
+            <img class="imgg" src="./images/favfood.png" alt="">
             <h5>We have <br>
                 400+ Review <br>
                 On our app
@@ -107,111 +111,145 @@
     -->
     <section id="recipes">
         <h3>Try Our Special Recipes</h3>
-        <ul>
-            <li>Fasst Food</li>
-            <li>Rice Menu</li>
-            <li>Desserts</li>
-            <li>Coffee</li>
-            <li>Pizza</li>
-            <li>See All Product</li>
+        <ul class="d-flex justify-content-center align-content-center list-unstyled fs-6 fw-bold">
+            <a href="#"><li>Fasst Food</li><div></div></a>
+            <a href="#"><li>Rice Menu</li><div></div></a>
+            <a href="#"><li>Desserts</li><div></div></a>
+            <a href="#"><li>Coffee</li><div></div></a>
+            <a href="#"><li>Pizza</li><div></div></a>
+            <a href="#"><li>See All Product</li><div></div></a>
         </ul>
+        <hr>
 
-        <div class=""uniquer>
-            <div>
-                <img src="" alt="Crispy Fried Chicken">
-                <div>
+        <div class="unique d-flex justify-content-between align-content-center mt-3">
+            <div class=" d-flex flex-column justify-content-center align-content-center uniquecard">
+                <img src="./images/favfood.png" alt="Crispy Fried Chicken">
+                <div class="text-center mt-2">
                     <!-- 5 star icons -->
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
                 </div>
                 <p>Crispy Fried Chicken</p>
                 <span>
-                    Price <span>$ 13.00</span>
+                    Price <span class="price">$ 13.00</span>
                 </span>
-                <button>Add To Cart+</button>
+                <button class="btn btn-outline-danger fs-5 fw-light mt-3">Add To Cart+</button>
             </div>
-            <div>
-                <img src="" alt="Burger Patty Recipe">
-                <div>
+            <div class="uniquecard d-flex flex-column justify-content-center align-content-center">
+                <img src="./images/favfood.png" alt="Crispy Fried Chicken">
+                <div class="text-center mt-2">
                     <!-- 5 star icons -->
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
                 </div>
-                <p>Burger Patty Recipe</p>
+                <p>Crispy Fried Chicken</p>
                 <span>
-                    Price <span>$ 15.00</span>
+                    Price <span class="price">$ 13.00</span>
                 </span>
-                <button>Add To Cart+</button>
-                
+                <button class="btn btn-outline-danger fs-5 fw-light mt-3">Add To Cart+</button>
             </div>
-            <div>
-                <img src="" alt="Must-Try Dishes">
-                <div>
+            <div class="uniquecard d-flex flex-column justify-content-center align-content-center">
+                <img src="./images/favfood.png" alt="Crispy Fried Chicken">
+                <div class="text-center mt-2">
                     <!-- 5 star icons -->
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
                 </div>
-                <p>Must-Try Dishes</p>
+                <p>Crispy Fried Chicken</p>
                 <span>
-                    Price <span>$ 12.00</span>
+                    Price <span class="price">$ 13.00</span>
                 </span>
-                <button>Add To Cart+</button>
+                <button class="btn btn-outline-danger fs-5 fw-light mt-3">Add To Cart+</button>
             </div>
-            <div>
-                <img src="" alt="Tasty French Fries">
-                <div>
+            <div class="uniquecard d-flex flex-column justify-content-center align-content-center">
+                <img src="./images/favfood.png" alt="Crispy Fried Chicken">
+                <div class="text-center mt-2">
                     <!-- 5 star icons -->
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
                 </div>
-                <p>Tasty French Fries</p>
+                <p>Crispy Fried Chicken</p>
                 <span>
-                    Price <span>$ 17.00</span>
+                    Price <span class="price">$ 13.00</span>
                 </span>
-                <button>Add To Cart+</button>
+                <button class="btn btn-outline-danger fs-5 fw-light mt-3">Add To Cart+</button>
             </div>
+            
         </div>
         <!-- three dots functionality -->
-        <span>. . .</span>
+        <span class="fs-3 text-danger fw-bolder rounded-3 linee ">___ _ _ </span>
     </section>
 
     <!-- Testimonials -->
     <!-- This is where our happy customers talk. In “What our Customers are saying”, you'll find real comments from real people who've tried our service. It shows we're trustworthy and good at what we do. -->
-    <section id="testimonials">
-        <div class="customers">
-            <div>
-                <img src="" alt="">
-                <div>
-                    <p>Rosele Desoza</p>
+    <section id="testimonials" class="d-flex justify-content-around align-content-center">
+        <div class="customers d-flex flex-column gap-5">
+            <div class="d-flex align-content-start bg-white">
+                <img class="pe-4" src="./images/review.png" alt="user1">
+                <div class="pe-5 mt-2 ">
+                    <p class="boldtxt">Rosele Desoza</p>
                     <p>Marketing Coordinator</p>
                 </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <p>Marvin McKinney</p>
-                    <p>Web Designer</p>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <p>Guy Hawkins</p>
-                    <p>President of Sales</p>
-                </div>
-            </div>
-            <div>
-                <img src="" alt="">
-                <div>
-                    <p>Kathryn Murphy</p>
+            <div class="d-flex align-content-start bg-white pe-5">
+                <img class="pe-4" src="./images/review.png" alt="user1">
+                <div class="pe-5 mt-2 ">
+                    <p class="boldtxt">Rosele Desoza</p>
                     <p>Marketing Coordinator</p>
                 </div>
             </div>
+            <div class="d-flex align-content-start bg-white pe-5">
+                <img class="pe-4" src="./images/review.png" alt="user1">
+                <div class="pe-5 mt-2 ">
+                    <p class="boldtxt">Rosele Desoza</p>
+                    <p>Marketing Coordinator</p>
+                </div>
+            </div>
+            <div class="d-flex align-content-start bg-white pe-5">
+                <img class="pe-4" src="./images/review.png" alt="user1">
+                <div class="pe-5 mt-2 ">
+                    <p class="boldtxt">Rosele Desoza</p>
+                    <p>Marketing Coordinator</p>
+                </div>
+            </div>
+            
         </div>
+        <div class="vertical-line"></div>
         <div class="reviews">
             <h3>
                 What our Customers <br>
                 <span>are saying</span>
             </h3>
 
-            <p>Rosela Desoza</p>
-            <span>Marketing Coordinator</span>
-            <div><!--5 star icons--></div>
+            <p class="boldtxt">|Rosela Desoza
+            </p>
+
+            <div class="d-flex justify-content-between">
+                <span style="color: lightslategrey;">|Marketing Coordinator</span>
+                <div>
+                    <!-- 5 star icons -->
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                    <i class="fa-solid fa-star" style="color: #ffd43b;"></i>
+                </div>
+            </div>
             <hr>
-            <p>
-                “Having good restaurant reviews is crucial these days. It is not just making our decision to pick one easier, it is also helping the restaurant be more successful. You can quickly copy and paste these good restaurant review examples, publish them on Facebook”
+            <p class="para">
+                “Having good restaurant reviews is crucial these days. <br> It is not just making our decision to pick one easier,<br> it is also helping the restaurant be more successful. <br> You can quickly copy and paste these good restaurant <br> review examples, publish them on Facebook”
             </p>
         </div>
     </section>
@@ -220,11 +258,11 @@
     <!-- It's all about our mobile app. We use catchy phrases like “Never Feel Hungry” to make users want to download our app. It's our way of saying, "Hey, want good food easily? Use our app!".
     -->
     <section id="mobileapp">
-        <div class="image">
+        <img src="./images/mobileapp.png" alt="mobileapp">
+        <!-- <div class="image">
             <img src="" alt="">
         </div>
         <div>
-            <!-- text wrap -->
             <h5>
                 Never Feel Hungry! 
                 Download Our Mobile App 
@@ -235,60 +273,56 @@
                 <img src="" alt="">
                 <img src="" alt="">
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- footer -->
-    <section id="footer">
+    <section id="footer" class="d-flex p-5">
         <div>
-            <div class="logo">
-                <span>D</span>
-                <span>Fdelivery</span> 
+            <div class="logo mb-3">
+                <span class="bg-danger px-1 text-light rounded fs-3 fw-bold">D</span>
+                <span class="text-danger fs-3 fw-bold">Fdelivery</span> 
             </div>
             <p>
                 Retail food delivery is a courier service in which a restaurant, store, or independent food-delivery
             </p>
-            <div>
+            <div class="social">
                 <!-- facebook icon -->
+                <div class="f"><i class="fa-brands fa-facebook-f"></i></div>
                 <!-- twitter -->
+                <div class="l"><i class="fa-brands fa-linkedin-in"></i></div>
                 <!-- linkedin -->
+                <div class="t"><i class="fa-brands fa-twitter"></i></div>
             </div>
         </div>
-        <div>
-            <p>Company</p>
-            <ul>
-                <li>About Us</li>
-                <li>Blog</li>
-                <li>All Products</li>
-                <li>Locations Map</li>
-            </ul>
-        </div>
-        <div>
-            <p>Services</p>
-            <ul>
-                <li>Order tracking</li>
-                <li>Wish List</li>
-                <li>My account</li>
-                <li>Terms & Conditions</li>
-            </ul>
-        </div>
-        <div>
-            <p>Support</p>
-            <ul>
-                <li>FAQ</li>
-                <li>Policy</li>
-                <li>Business</li>
-                <li>Support Career</li>
-            </ul>
-        </div>
-        <div>
-            <p>Contact</p>
-            <ul>
-                <li>WhatsApp</li>
-                <li>Support 24</li>
-                <li>Quick Chat</li>
-            </ul>
-        </div>
+        <table>
+            <tr class="fs-5 mb-4">
+                <th>Company</th>
+                    <th>Services</th>
+                    <th>Support</th>
+                    <th>All Products</th>
+                    <th>Contact</th>
+            </tr>
+            <tr class="fs-6 fw-lighter">
+                <td>About Us</td>
+                <td>Order tracking</td>
+                <td>Wish List</td>
+                <td>My account</td>
+                <td>Terms & Conditions</td>
+            </tr>
+            <tr>
+                <td>blog</td>
+                <td>FAQ</td>
+                <td>Policy</td>
+                <td>Business</td>
+                <td>Support Career</td>
+            </tr>
+            <tr>
+                <td>Contact</td>
+                <td>WhatsApp</td>
+                <td>Support 24</td>
+                <td>Quick Chat</td>
+            </tr>
     </section>
     
     <!-- bootstrap js link -->
